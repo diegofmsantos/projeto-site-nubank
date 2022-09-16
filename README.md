@@ -1,2 +1,2 @@
 # projeto-site-nubank
- Clone do site do Nubank
+ Projeto Exemplo do site Nubank
