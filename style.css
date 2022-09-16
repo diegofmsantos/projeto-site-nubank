@@ -16,18 +16,22 @@
 
 header {
     width: 100%;
+}
+
+.cabeçalho {
+    width: 100%;
     height: 56px;
     padding: 0px 48px;
     background-color: white;
     border-bottom: 1px solid #e4e1e1;
-    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    position: fixed;
+    z-index: 1;
 }
 
 nav {
-    width: auto;
     margin-right: auto;
     margin-left: 35px;
 }
@@ -50,9 +54,10 @@ ul {
     width: 100px;
     height: 56px;
     color: #883bbb;
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 17px;
+    font-weight: 600;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -70,12 +75,10 @@ select {
 }
 
 ul a {
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0px;
-    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    font-weight: 600;
     color: #111111;
-    text-decoration: none;
 }
 
 .lista1, .lista2, .lista3, .lista4, .lista5 {
@@ -85,9 +88,9 @@ ul a {
 }
 
 .lista1 {
-    width: 98.91px;
+    width: 105px;
     height: 56px;
-    margin: 0px 24px 0px 0px;
+    margin: 0px 15px 0px 0px;
 }
 
 .lista1 a {
@@ -95,9 +98,9 @@ ul a {
 }
 
 .lista2 {
-    width: 100.86px;
+    width: 102px;
     height: 56px;
-    margin: 0px 24px 0px 0px;
+    margin: 0px 20px 0px 0px;
 }
 
 .lista2 a {
@@ -105,9 +108,9 @@ ul a {
 }
 
 .lista3 {
-    width: 155.86px;
+    width: 159px;
     height: 56px;
-    margin: 0px 24px 0px 0px;
+    margin: 0px 20px 0px 0px;
 }
 
 .lista3 a {
@@ -117,7 +120,7 @@ ul a {
 .lista4 {
     width: 102.55px;
     height: 56px;
-    margin: 0px 24px 0px 0px;
+    margin: 0px 20px 0px 0px;
 }
 
 .lista4 a {
@@ -135,12 +138,15 @@ ul a {
 
 .banner-principal {
     width: 100%;
-    height: 610px;
+    height: 601px;
     background-image: url('imagens/banner-principal.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
+    position: relative;
+    top: 56px;
+    z-index: 0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -150,8 +156,8 @@ ul a {
 .container {
    width: 503.42px;
    height: 206.69px;
-   margin-left: 155px;
-   margin-top: 15px;
+   margin-left: 156px;
+   margin-top: 11px;
 }
 
 .titulo-principal {
@@ -161,7 +167,7 @@ ul a {
     line-height: 55.7px;
     letter-spacing: -1.4px;
     color: white;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 }
 
 .titulo-secundario {
@@ -182,7 +188,7 @@ form {
     border-radius: 20px;
     padding: 24px;
     margin-right: 50px;
-    margin-top: 13px;
+    margin-top: 10px;
 }
 
 form h1 {
@@ -190,6 +196,7 @@ form h1 {
     height: 60.67px;
     margin-bottom: 32px;
     font-size: 24px;
+    font-weight: 600;
     line-height: 31.7px;
     letter-spacing: -0.5px;
 }
@@ -229,7 +236,7 @@ button a {
 }
 
 div.material-symbols-outlined {
-    color: rgb(150, 144, 144);
+    color: rgb(88, 86, 86);
 }
 
 .banner-secundário {
@@ -238,6 +245,7 @@ div.material-symbols-outlined {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 56px;
 }
 
 .container-secundário {
@@ -247,9 +255,7 @@ div.material-symbols-outlined {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 64px 0px 64px 64px;
-    line-height: 55.7px;
-    letter-spacing: -1.4px;
+    padding: 110px 0px 64px 75px;
 }
 
 .container-secundário h1 {
@@ -294,6 +300,7 @@ div.material-symbols-outlined {
 .cartão-nubank {
     width: 531.19px;
     height: 569px;
+    padding: 30px 0px 0px 22px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -319,7 +326,7 @@ div.material-symbols-outlined {
 .container-secundário-ultra {
     width: 610px;
     height: 280px;
-    margin-top: 206px;
+    margin-top: 222px;
     margin-left: 163px;
     line-height: 55px;
 }
@@ -337,32 +344,31 @@ div.material-symbols-outlined {
 .cards-ultra {
     width: 391px;
     height: 385px;
-    margin-top: 121px;
+    margin-top: 137px;
     margin-left: 23px;
 }
 
 .celular {
     width: 284px;
     height: 479px;
-    margin-top: 17px;
-    margin-left: 88px;
+    margin-left: 89px;
 }
 
 .banner-secundário-celular {
     width: 100%;
-    height: 570px;
+    height: 657px;
     font-size: 39.5px;
     margin: auto;
     background-color: #F5F5F5;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .container-secundário-celular {
     width: 609px;
     height: 280px;
-    margin-top: 117px;
+    margin-top: 10px;
     margin-left: 75px;
     line-height: 55px;
 }
@@ -390,22 +396,28 @@ div.material-symbols-outlined {
 
 .banner-secundário-pj {
     width: 100%;
-    height: 625px;
+    height: 657px;
     font-size: 39px;
     color: #FFFFFF;
     margin: auto;
     background-color: #4C0677;
     display: flex;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .container-secundário-pj {
     width: 610px;
     height: 280px;
-    margin-top: 177px;
+    margin-top: 8px;
     margin-left: 163px;
     line-height: 55px;
+}
+
+.cards-pj {
+    width: 391px;
+    height: 375px;
+    margin-left: 23px;
 }
 
 .container-secundário-pj a {
@@ -424,7 +436,7 @@ div.material-symbols-outlined {
 
 .banner-pessoas {
     width: 100%;
-    height: 670px;
+    height: 680px;
     font-size: 40px;
     background-image: url('imagens/banner-pessoas1.png');
     background-position: top center;
@@ -436,10 +448,10 @@ div.material-symbols-outlined {
 }
 
 .container-secundário-pessoas {
-    width: 605px;
-    height: 280px;
-    margin-top: 150px;
-    margin-left: 175px;
+    width: 664px;
+    height: 407px;
+    margin: 100px 0px 0px 110px;
+    padding: 64px;
     line-height: 55px;
     color: white;
 }
@@ -474,7 +486,7 @@ div.material-symbols-outlined {
 .container-secundário-pessoas2 {
     width: 605px;
     height: 280px;
-    margin-top: 117px;
+    margin-top: 132px;
     margin-left: 175px;
     line-height: 55px;
     color: white;
@@ -486,7 +498,7 @@ div.material-symbols-outlined {
 
 .banner-pessoas3 {
     width: 100%;
-    height: 670px;
+    height: 680px;
     font-size: 39.5px;
     background-image: url('imagens/banner-homem.png');
     background-position: top center;
@@ -500,7 +512,7 @@ div.material-symbols-outlined {
 .container-secundário-pessoas3 {
     width: 550px;
     height: 280px;
-    margin-top: 175px;
+    margin-top: 192px;
     margin-left: 175px;
     line-height: 55px;
     color: white;
@@ -702,13 +714,21 @@ footer .material-symbols-outlined {
 
 @media screen and (max-width: 1151px) {
 
+    .cabeçalho {
+        height: 64px;
+    }
+
     .banner-principal {
-        height: 800px;
+        height: 718px;
         display: flex;
-        background-position: top right;
+        background-position: right bottom;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+    }
+
+    .titulo-secundario {
+        width: 620px;
     }
 
     .container {
@@ -716,23 +736,26 @@ footer .material-symbols-outlined {
     }
 
     form {
+        margin-top: 30px;
     margin-right: 30px;
     align-self: flex-end;
     }
 
     .banner-secundário {
-        justify-content: space-around;
+        justify-content: flex-start;
+        height: 518.33px;
+        gap: 0px;
     }
 
     .container-secundário {
-        width: 520px;
+        flex: 2;
+        width: 450px;
         height: 450px;
-        margin-top: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding: 0;
+        padding: 16px 0px 0px 64px;
         line-height: 55.7px;
         letter-spacing: -1.4px;
     }
@@ -743,14 +766,16 @@ footer .material-symbols-outlined {
     }
 
     .cartão-nubank {
-        width: 420px;
+        flex: 1;
+        width: 409.59px;
         height: 320px;
+        padding-right: 178px;
     }
 
     .cards {
-        width: 420px;
+        width: 409.59px;
         height: 320px;
-        margin-top: 30px;
+        
     }
 
     .banner-secundário-ultra {
@@ -889,23 +914,25 @@ footer .material-symbols-outlined {
         display: none;
     }
 
-    header {
+    .cabeçalho {
         height: 64px;
         justify-content: space-between;
-        padding: 0px 20px 0px 24px;
+        padding: 0px 30px 0px 32px;
     }
 
     .banner-principal {
         width: 100vw;
-        height: 773px;
+        height: 837.7px;
+        background-position: center right;
         justify-content: center;
         align-items: flex-start;
-        background-position: right center;
+        background-position: top right;
+        background-color: black;
     }
 
     .container {
-        width: auto;
-        height: 150px;
+        width: 469.33px;
+        height: 262.36px;
         margin-left: 15px;
         display: flex;
         flex-direction: column;
@@ -914,15 +941,16 @@ footer .material-symbols-outlined {
     }
 
     .titulo-principal {
-        width: auto;
-        height: 36px;
-        font-size: min(30px, 5vw);
+        width: 400px;
+        height: 167.02px;
+        font-size: 48px;
+        margin: 0px 0px 16px 5px;
     }
 
     .titulo-secundario {
-        width: auto;
-        height: 55px;
-        font-size: clamp(1.2em, 1em + 3vw, 1.1em);
+        width: 469.33px;
+        height: 63.34px;
+        font-size: 24px;
     }
 
     form {
