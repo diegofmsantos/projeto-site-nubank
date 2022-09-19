@@ -909,7 +909,7 @@ footer .material-symbols-outlined {
     }
 
     .cabeçalho {
-       
+        position: fixed;
         justify-content: space-between;
         padding: 0px 30px 0px 32px;
     }
@@ -1134,6 +1134,7 @@ footer .material-symbols-outlined {
 
     .banner-principal {
         background-position: bottom bottom;
+        width: auto;
         height: 830px;
         justify-content: center;
         align-items: flex-start;
@@ -1144,6 +1145,7 @@ footer .material-symbols-outlined {
 
     .container {
         flex: 2;
+        width: auto;
         margin: 0px 0px 30px 35px;
         justify-content: flex-end;
     }
@@ -1286,7 +1288,18 @@ footer .material-symbols-outlined {
         width: 320px;
     }
 
+    .container-secundário-pj {
+        width: 377px;
+        height: 224px;
+        margin: 50px 0px 0px 0px;
+        padding: 0px 0px 0px 30px;
+    }
 
+    .container-secundário-pj h1 {
+        font-size: 30px;
+        line-height: 31.7px;
+        letter-spacing: -0.9px;
+    }
 
     .rodapé-primário {
         justify-content: flex-start;
