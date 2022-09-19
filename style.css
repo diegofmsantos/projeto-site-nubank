@@ -13,10 +13,6 @@
     text-decoration: none;
 }
 
-header {
-    position: fixed;
-}
-
 .cabeçalho {
     width: 100vw;
     height: 56px;
@@ -713,6 +709,7 @@ footer .material-symbols-outlined {
 
     .cabeçalho {
         height: 64px;
+        position: fixed;
     }
 
     .banner-principal {
@@ -912,7 +909,7 @@ footer .material-symbols-outlined {
     }
 
     .cabeçalho {
-        height: 64px;
+       
         justify-content: space-between;
         padding: 0px 30px 0px 32px;
     }
@@ -1012,11 +1009,12 @@ footer .material-symbols-outlined {
     .cards-ultra {
         align-self: flex-end;
         margin-right: 48px;
+        margin-bottom: 30px;
         height: 350px;
     }
 
     .banner-secundário-celular {
-        height: 410px;
+        height: 450px;
     }
 
     .container-secundário-celular {
