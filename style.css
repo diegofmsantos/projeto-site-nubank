@@ -13,13 +13,12 @@
     text-decoration: none;
 }
 
-
 header {
-    width: 100%;
+    position: fixed;
 }
 
 .cabeçalho {
-    width: 100%;
+    width: 100vw;
     height: 56px;
     padding: 0px 48px;
     background-color: white;
@@ -243,43 +242,40 @@ div.material-symbols-outlined {
     width: 100%;
     height: 569px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     margin-top: 56px;
 }
 
 .container-secundário {
     width: 664px;
-    height: 569px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 110px 0px 64px 75px;
+    padding: 110px 0px 64px 62px;
 }
 
-.container-secundário h1 {
+.container-secundário h1 a {
     width: 385.11px;
-    height: 56px;
+    margin-bottom: 10px;
     color: #820AD1;
     font-size: 48px;
-    line-height: 55.7px;
-    letter-spacing: -1.4px;
 }
 
-.container-secundário h1:hover {
+.container-secundário h1 a:hover {
     text-decoration: underline;
     color: #820AD1;
 }
 
-.container-secundário p {
-    font-size: 48px;
+.container-secundário h1 {
+    font-size: 40px;
     font-weight: 600;
-    line-height: 55.7px;
-    letter-spacing: -1.4px;
-    margin-bottom: 32px;
-    width: 600px;
-    height: 222.69px;
+    line-height: 48px;
+    letter-spacing: -1.2px;
+    width: 605px;
+    height: 210px;
 }
 
 .saiba:hover {
@@ -295,21 +291,14 @@ div.material-symbols-outlined {
     line-height: 24.3px;
     letter-spacing: -0.2px;
     display: flex;
-}
-
-.cartão-nubank {
-    width: 531.19px;
-    height: 569px;
-    padding: 30px 0px 0px 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 32px;
 }
 
 .cards {
-    width: 531.19px;
-    height: 417.28px;
+    width: 550px;
+    height: 430px;
+    margin-right: auto;
+    padding-left: 50px;
 }
 
 .banner-secundário-ultra {
@@ -537,7 +526,7 @@ footer {
     border-bottom: 1px solid rgba(255, 255, 255, 0.048);
 }
 
-.footer-container {
+.footer-container, .footer-container-1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -546,6 +535,23 @@ footer {
     width: 309.25px;
     height: 309.75px;
     color: #FFFFFF;
+}
+
+.footer-container p, .footer-container-1 p {
+    margin-bottom: 25px;
+}
+
+.footer-container a, .footer-container-1 a {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.footer-container a:hover {
+    color: #AB4BEA;
+}
+
+.footer-container-1 a:hover {
+    color: #AB4BEA;
 }
 
 .footer-container-ex {
@@ -573,20 +579,7 @@ footer {
     color: #AB4BEA;
 }
 
-.footer-container p {
-    margin-bottom: 25px;
-}
-
-.footer-container a {
-    color: #FFFFFF;
-    font-weight: bold;
-}
-
-.footer-container a:hover {
-    color: #AB4BEA;
-}
-
-.footer-subcontainer {
+.footer-subcontainer, .footer-subcontainer-1 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -597,11 +590,11 @@ footer {
     color: #FFFFFF;
 }
 
-.footer-subcontainer img {
+.footer-subcontainer-1 img {
     margin-left: 0px;
 }
 
-.footer-subcontainer a {
+.footer-subcontainer a, .footer-subcontainer-1 a {
     color: #FFFFFF;
 }
 
@@ -609,11 +602,15 @@ footer {
     color: #AB4BEA;
 }
 
-.footer-subcontainer p {
+.footer-subcontainer-1 a:hover {
+    color: #AB4BEA;
+}
+
+.footer-subcontainer p, .footer-subcontainer-1 p {
     margin-bottom: 25px;
 }
 
-.footer-subcontainer img {
+.footer-subcontainer-1 img {
     width: 151px;
     height: 56px;
 }
@@ -694,10 +691,6 @@ footer .material-symbols-outlined {
 
 @media screen and (max-width: 940px) {
 
-    header {
-        justify-content: space-between;
-    }
-
     nav {
         display: none;
     }
@@ -708,6 +701,10 @@ footer .material-symbols-outlined {
 
     #burguer {
         display: block;
+    }
+
+    .cabeçalho {
+        justify-content: space-between;
     }
 }
 
@@ -737,43 +734,46 @@ footer .material-symbols-outlined {
 
     form {
         margin-top: 30px;
-    margin-right: 30px;
-    align-self: flex-end;
+        margin-right: 30px;
+        align-self: flex-end;
     }
 
     .banner-secundário {
-        justify-content: flex-start;
-        height: 518.33px;
-        gap: 0px;
+        justify-content: space-between;
+        align-items: center;
+        height: 530px;
+        padding: 0px 0px 0px 25px;
     }
 
     .container-secundário {
-        flex: 2;
-        width: 450px;
-        height: 450px;
+        width: 600px;
+        height: 300px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        padding: 16px 0px 0px 64px;
+        padding: 0px 0px 0px 40px;
         line-height: 55.7px;
         letter-spacing: -1.4px;
     }
 
-    .container-secundário p {
-        width: 520px;
-        height: 280px;
+    .container-secundário h1 a {
+        font-size: 42px;
+    }
+
+    .container-secundário h1 {
+        width: 530px;
+        font-size: 42px;
     }
 
     .cartão-nubank {
-        flex: 1;
-        width: 409.59px;
+        width: 450px;
         height: 320px;
-        padding-right: 178px;
+        padding-right: 30px;
     }
 
     .cards {
-        width: 409.59px;
+        width: 450px;
         height: 320px;
         
     }
@@ -796,9 +796,17 @@ footer .material-symbols-outlined {
         margin-left: 0px;
     }
 
+    .container-secundário-ultra h1 a {
+        font-size: 42px;
+    }
+
+    .container-secundário-ultra h1 {
+        font-size: 42px;
+    }
+
     .cards-ultra {
         width: 420px;
-        height: 350px;
+        height: 320px;
         margin: 0px;
     }
 
@@ -816,6 +824,14 @@ footer .material-symbols-outlined {
         line-height: 55px;
     }
 
+    .container-secundário-celular h1 {
+        font-size: 42px;
+    }
+
+    .container-secundário-celular h1 a {
+        font-size: 42px;
+    }
+
     img.celular {
         margin: 0px;
     }
@@ -831,6 +847,11 @@ footer .material-symbols-outlined {
         height: 280px;
         align-items: center;
         margin: 0px;
+    }
+
+    .cards-pj {
+        width: 380px;
+        height: 300px;
     }
 
     .banner-pessoas {
@@ -876,35 +897,11 @@ footer .material-symbols-outlined {
     }
 
     .rodapé-primário {
-        justify-content: flex-start;
-        height: auto;
-        padding: 80px 40px;
+        gap: 100px;
     }
 
-    .footer-container {
-        width: 470px;
-        height: 310px;
-    }
-
-    .footer-container-ex {
-        width: 470px;
-        height: 310px;
-    }
-
-    .footer-subcontainer {
-        width: 470px;
-    }
-
-    .rodapé-secundário {
-        height: 350px;
-        flex-direction: column;
-        gap: 30px;
-        padding: 50px;
-        justify-content: center;
-    }
-
-    .footer-final {
-        width: auto;
+    .footer1 {
+        gap: 10px;
     }
 }
 
@@ -974,52 +971,48 @@ footer .material-symbols-outlined {
     }
 
     .container-secundário {
-        width: 320px;
+        width: 350px;
         height: 527.64px;
-        padding: 64px 48px;
+        padding: 64px 30px;
         margin: 0px;
     }
 
-    .container-secundário h1 {
+    .container-secundário h1 a {
         font-size: 48px;
         width: 320px;
         height: 111.34px;
     }
 
-    .container-secundário p {
+    .container-secundário h1 {
         font-size: 40px;
         width: 315px;
         line-height: 50px;
         height: 380px;
     }
 
-    .cartão-nubank {
-        width: 320px;
-        height: 251.45px;
-        display: flex;
-        justify-content: center;
-        padding: 0px;
-    }
-
     .cards {
         width: 320px;
-        height: 251.45px;
+        height: 251px;
+        margin: 0px;
+        padding: 0px;
     }
 
     .banner-secundário-ultra {
         height: 750px;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
+        gap: 70px;
     }
 
     .container-secundário-ultra {
-        padding-left: 48px;
+        margin: 50px 0px 0px 48px;
     }
 
     .cards-ultra {
         align-self: flex-end;
         margin-right: 48px;
+        height: 350px;
     }
 
     .banner-secundário-celular {
@@ -1037,17 +1030,307 @@ footer .material-symbols-outlined {
     }
 
     .banner-secundário-pj {
-        height: 900px;
+        height: 850px;
         flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 70px;
+    }
+
+    .container-secundário-pj {
+        padding-left: 50px;
+        margin-top: 70px;
+    }
+
+    .cards-pj {
+        width: 430px;
+        height: 380px;
+        align-self: flex-end;
+        margin-right: 40px;
+    }
+
+    .banner-pessoas {
+        height: 765px;
+    }
+
+    .container-secundário-pessoas {
+        width: 384px;
+        height: 765px;
+    }
+
+    .container-secundário-pessoas a {
+        width: 330px;
+    }
+
+    .banner-pessoas2 {
+        height: 576px;
+        background-position: left center;
+        background-size: 1400px;
+    }
+
+    .container-secundário-pessoas2 {
+        padding: 0px 64px;
+    }
+
+    .banner-pessoas3 {
+        background-position: center center;
+        background-size: 1400px;
+    }
+
+    .container-secundário-pessoas3 {
+        width: 293px;
+        height: 334px;
+        padding: 64px 64px;
+    }
+
+    .container-secundário-pessoas3 h1 {
+        width: 293px;
+    }
+
+    .saiba-pessoas {
+        width: 200px;
+    }
+
+    .rodapé-primário {
+        gap: 0px;
+        padding: 80px 40px 10px 40px;
+    }
+
+    .rodapé-secundário {
+      flex-direction: column;
+      gap: 40px;
+      height: 300px;
+      padding: 50px 50px;
+    }
+
+    .footer1 {
+        height: 40px;
+    }
+
+    .footer2 {
+        justify-content: flex-start;
+    }
+
+    .rodapé-secundário p {
+        font-size: 16px;
+    }
+
+    .footer-container, .footer-container-1, .footer-container-ex, .footer-subcontainer {
+        width: 310px;
+        margin-bottom: 50px;
+    }
+
+    .footer-subcontainer-1 {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .cabeçalho {
+        padding: 0px 20px 0px 20px;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+    }
+
+    .banner-principal {
+        background-position: bottom bottom;
+        height: 830px;
         justify-content: center;
         align-items: flex-start;
+        position: relative;
+        top: 64px;
+        z-index: 000;
     }
 
-    img.cards-pj {
-        margin: 0px;
-        align-self: flex-end;
+    .container {
+        flex: 2;
+        margin: 0px 0px 30px 35px;
+        justify-content: flex-end;
     }
 
+    .titulo-principal {
+        font-size: 28px;
+        width: 317px;
+        height: 71px;
+        margin: 0px 0px 16px 0px;
+        line-height: 36px;
+        letter-spacing: -0.9px;
+    }
+
+    .titulo-secundario {
+        font-size: 20px;
+        width: 338px;
+        height: 73px;
+        line-height: 24.4px;
+        letter-spacing: -0.4px;
+    }
+
+    form {
+        flex: 1;
+        align-self: center;
+        margin: 10px 60px 50px 30px;
+    }
+
+    form h1 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    input#cpf {
+        font-size: 12px;
+    }
+
+    .banner-secundário {
+        height: 700px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 64px 0px 0px 0px;
+    }
+
+    .cards {
+        margin: 50px 24px 50px 24px;
+        width: 377px;
+        height: 297px;
+    }
+
+    .container-secundário {
+        width: 390px;
+        height: 250px;
+        padding: 60px 40px 40px 0px;
+    }
+
+    .container-secundário h1 a {
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -0.9px;
+    }
+
+    .container-secundário h1 {
+        font-size: 24px;
+        line-height: 31.7px;
+        letter-spacing: -0.9px;
+        width: 375px;
+    }
+
+    .banner-secundário-ultra {
+        height: 700px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 64px 0px 0px 0px;
+    }
+
+    .cards-ultra {
+        margin: 50px 24px 70px 24px;
+        width: 377px;
+        height: 297px;
+    }
+
+    .container-secundário-ultra {
+        width: 377px;
+        height: 188px;
+        padding: 60px 40px 40px 0px;
+        margin: 30px;
+    }
+
+    .container-secundário-ultra h1 a {
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -0.9px;
+    }
+
+    .container-secundário-ultra h1 {
+        font-size: 24px;
+        line-height: 31.7px;
+        letter-spacing: -0.9px;
+        width: 306px;
+    }
+
+    .banner-secundário-celular {
+        background-color: #FFFFFF;
+        height: 750px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .celular {
+        flex: 2;
+        margin: 50px 24px 50px 24px;
+        width: 240px;
+        height: 403px;
+    }
+
+    .container-secundário-celular {
+        flex: 1;
+        width: 390px;
+        height: 250px;
+        padding: 40px 40px 40px 10px;
+    }
+
+    .container-secundário-celular h1 a {
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: -0.9px;
+    }
+
+    .container-secundário-celular h1 {
+        font-size: 30px;
+        line-height: 31.7px;
+        letter-spacing: -0.5px;
+        width: 320px;
+    }
+
+
+
+    .rodapé-primário {
+        justify-content: flex-start;
+        height: auto;
+        padding: 60px 40px 0px 40px;
+    }
+
+    .footer-container {
+        width: 450px;
+        height: 310px;
+    }
+
+    .footer-container-1 {
+        width: 450px;
+        height: 220px;
+    }
+
+    .footer-container-ex {
+        width: 450px;
+        height: 310px;
+    }
+
+    .footer-subcontainer {
+        width: 450px;
+    }
+
+    .footer-subcontainer-1 {
+        width: 450px;
+        height: 220px;
+    }
+
+    .rodapé-secundário {
+        height: 350px;
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px;
+        justify-content: center;
+    }
+
+    .footer-final {
+        width: auto;
+    }
 }
 
 
