@@ -1126,7 +1126,8 @@ footer .material-symbols-outlined {
 @media screen and (max-width: 425px) {
 
     .cabeçalho {
-        padding: 0px 20px 0px 20px;
+        width: 100%;
+        padding: 0px;
         position: fixed;
         top: 0;
         z-index: 100;
@@ -1226,16 +1227,16 @@ footer .material-symbols-outlined {
     }
 
     .cards-ultra {
-        margin: 50px 24px 70px 24px;
-        width: 377px;
+        margin-left: auto;
+        width: 350px;
         height: 297px;
     }
 
     .container-secundário-ultra {
-        width: 377px;
+        width: 350px;
         height: 188px;
-        padding: 60px 40px 40px 0px;
-        margin: 30px;
+        padding: 60px 0px 30px 0px;
+        margin: 0px;
     }
 
     .container-secundário-ultra h1 a {
@@ -1288,6 +1289,10 @@ footer .material-symbols-outlined {
         width: 320px;
     }
 
+    .banner-secundário-pj {
+        height: 690px;
+    }
+
     .container-secundário-pj {
         width: 377px;
         height: 224px;
@@ -1299,6 +1304,62 @@ footer .material-symbols-outlined {
         font-size: 30px;
         line-height: 31.7px;
         letter-spacing: -0.9px;
+    }
+
+    .cards-pj {
+        width: 377px;
+        height: 297px;
+    }
+
+    .banner-pessoas {
+        height: 580px;
+        background-position: center bottom;
+    }
+
+    .container-secundário-pessoas {
+        width: 400px;
+        height: 300px;
+        padding: 40px;
+        line-height: 31.7px;
+        letter-spacing: -0.9px;
+    }
+
+    .container-secundário-pessoas h1 {
+        font-size: 30px;
+    }
+
+    .banner-pessoas2 {
+        height: 580px;
+        background-position: center bottom;
+    }
+
+    .container-secundário-pessoas2 {
+        width: 400px;
+        height: 300px;
+        padding: 40px;
+        line-height: 31.7px;
+        letter-spacing: -0.9px;
+    }
+
+    .container-secundário-pessoas2 h1 {
+        font-size: 30px;
+    }
+
+    .banner-pessoas3 {
+        height: 500px;
+        background-position: center bottom;
+    }
+
+    .container-secundário-pessoas3 {
+        width: 400px;
+        height: 300px;
+        padding: 40px;
+        line-height: 31.7px;
+        letter-spacing: -0.9px;
+    }
+
+    .container-secundário-pessoas3 h1 {
+        font-size: 30px;
     }
 
     .rodapé-primário {
@@ -1332,11 +1393,26 @@ footer .material-symbols-outlined {
     }
 
     .rodapé-secundário {
+        width: 400px;
         height: 350px;
         flex-direction: column;
-        gap: 30px;
-        padding: 50px;
+        gap: 50px;
+        padding: 30px 30px 30px 30px;
         justify-content: center;
+    }
+
+    .footer1 {
+        width: 320px;
+        height: 100px;
+    }
+
+    .footer1 p {
+        height: 50px;
+    }
+
+    .footer2 {
+        width: 320px;
+        height: 50px;
     }
 
     .footer-final {
