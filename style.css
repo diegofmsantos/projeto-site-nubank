@@ -13,6 +13,10 @@
     text-decoration: none;
 }
 
+body {
+    width: 100vw;
+}
+
 .cabeçalho {
     width: 100vw;
     height: 56px;
@@ -692,19 +696,51 @@ footer .material-symbols-outlined {
     }
 
     #menu {
-        margin: 0px;
+        margin: 0px 0px 0px 400px;
         display: none;
         height: auto;
     }
 
     ul {
         flex-direction: column;
-        gap: 20px;
+        gap: 0px;
+        width: 180px;
         height: auto;
+        background-color: #FFFFFF;
+        margin-top: 300px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 1px solid black;
+    }
+
+    .lista1, .lista2, .lista3, .lista4, .lista5 {
+        width: 100%;
+        margin: 0px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.466);
+    }
+
+    .lista1:hover {
+        background-color: #AB4BEA;
+    }
+    .lista2:hover {
+        background-color: #AB4BEA;
+    }
+    
+    .lista3:hover {
+        background-color: #AB4BEA;
+    }
+
+    .lista4:hover {
+        background-color: #AB4BEA;
+    }
+
+    .lista5:hover {
+        background-color: #AB4BEA;
     }
 
     select {
-        background-color: transparent;
+        display: none;
     }
 
     .link-login {
@@ -926,6 +962,7 @@ footer .material-symbols-outlined {
     }
 
     .cabeçalho {
+        width: 100vw;
         position: fixed;
         justify-content: space-between;
         padding: 0px 30px 0px 32px;
@@ -980,8 +1017,8 @@ footer .material-symbols-outlined {
     }
 
     .banner-secundário {
+        width: auto;
         height: 655px;
-        
     }
 
     .container-secundário {
@@ -1012,6 +1049,7 @@ footer .material-symbols-outlined {
     }
 
     .banner-secundário-ultra {
+        width: auto;
         height: 750px;
         flex-direction: column;
         justify-content: flex-start;
@@ -1031,11 +1069,12 @@ footer .material-symbols-outlined {
     }
 
     .banner-secundário-celular {
+        width: auto;
         height: 450px;
     }
 
     .container-secundário-celular {
-        width: 460px;
+        width: 440px;
         height: 311px;
     }
 
@@ -1138,6 +1177,41 @@ footer .material-symbols-outlined {
     .footer-subcontainer-1 {
         margin-bottom: 0px;
     }
+}
+
+@media screen and (max-width: 680px) {
+
+    .banner-secundário {
+        flex-direction: column;
+        justify-content: center;
+        height: 830px;
+        margin-top: 64px;
+        padding: 0px;
+        gap: 50px;
+    }
+
+    .container-secundário {
+        width: 450px;
+        height: 350px;
+        padding: 0px;
+        margin: 40px 0px 0px 0px;
+    }
+
+    .container-secundário h1 {
+        width: 450px;
+        height: 250px;
+    }
+
+    .container-secundário h1 a {
+        width: 450px;
+        height: 50px;
+    }
+
+    .cards {
+        width: 350px;
+        height: 350px;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
