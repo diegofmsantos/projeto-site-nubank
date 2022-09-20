@@ -687,8 +687,24 @@ footer .material-symbols-outlined {
 
 @media screen and (max-width: 940px) {
 
-    nav {
+    header {
+        height: auto;
+    }
+
+    #menu {
+        margin: 0px;
         display: none;
+        height: auto;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    select {
+        background-color: transparent;
     }
 
     .link-login {
@@ -700,7 +716,8 @@ footer .material-symbols-outlined {
     }
 
     .cabeçalho {
-        justify-content: space-between;
+        justify-content: space-around;
+        height: auto;
     }
 }
 
@@ -1131,6 +1148,8 @@ footer .material-symbols-outlined {
         position: fixed;
         top: 0;
         z-index: 100;
+        padding: 0px;
+        justify-content: space-around;
     }
 
     .banner-principal {
@@ -1184,7 +1203,7 @@ footer .material-symbols-outlined {
     }
 
     .banner-secundário {
-        height: 700px;
+        height: 900px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
